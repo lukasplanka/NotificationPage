@@ -1,0 +1,170 @@
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228deg, 45%, 44%);
+}
+
+body {
+  font-family: "Plus Jakarta Sans";
+  background-color: #f6f7f9;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header div {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  text-align: right;
+}
+
+h1 {
+  color: #202124;
+}
+
+p {
+  color: #777a7f;
+}
+
+a {
+  text-decoration: none;
+  color: #5e626b;
+  font-weight: 800;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+a:hover {
+  color: #364d73;
+}
+
+i {
+  color: orange;
+  margin-left: 5px;
+}
+
+.container {
+  margin: 100px auto;
+  max-width: 800px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 15px;
+}
+
+.notification-box {
+  border-radius: 15px;
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 10px 0;
+}
+.notification-box div {
+  margin: 0 0 0 20px;
+}
+.notification-box img {
+  height: 100%;
+}
+
+#notification-sum {
+  color: white;
+  background-color: #07327d;
+  padding: 0 10px;
+  border-radius: 5px;
+  font-weight: 500;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin: 35px 0 0 10px;
+}
+
+.notification-time {
+  color: #8e8e95;
+}
+
+.notification-message {
+  border: 1px solid #f0f2f1;
+  background: white;
+  padding: 15px;
+  border-radius: 5px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.notification-message:hover {
+  background-color: #f6fafd;
+}
+
+#all-read {
+  color: #777a7f;
+  background-color: white;
+  border: none;
+  font-family: "Plus Jakarta Sans";
+  font-size: 16px;
+  text-align: right;
+  margin-top: 35px;
+  cursor: pointer;
+}
+#all-read:hover {
+  color: #364d73;
+}
+
+.user-name {
+  color: #202124;
+}
+
+.fa-solid {
+  display: none;
+}
+
+.active {
+  background-color: #f6fafd;
+}
+.active .fa-solid {
+  display: inline;
+}
+
+@media screen and (max-width: 786px) {
+  .container {
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 480px) {
+  .container {
+    padding: 10px;
+  }
+
+  .notification-box {
+    padding: 10px;
+  }
+
+  .notification-box div {
+    margin: 0;
+  }
+
+  .notification-box img {
+    -webkit-transform: scale(0.7);
+            transform: scale(0.7);
+  }
+
+  h1 {
+    font-size: 16px;
+  }
+
+  p {
+    margin-top: 0;
+  }
+
+  #notification-sum {
+    margin: 10px 0 0 10px;
+  }
+
+  #all-read {
+    margin-top: 10px;
+  }
+}
